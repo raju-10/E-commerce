@@ -18,7 +18,7 @@ const Header = () => {
                         <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont ">Blog</li>
                     </ul>
                     <div className="relative">
-                        <img className="w-12" src={cart} alt="cart image" srcset="" />
+                        <img className="w-12" src={cart} alt="cart" srcset="" />
                         <span className="absolute w-12 top-2 left-1 text-sm flex items-center justify-center font-semibold">0</span>
                     </div>
                 </div>
