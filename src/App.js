@@ -4,6 +4,7 @@ import Cart from "./components/Cart"
 import Header from './components/Header'
 import Footer from './components/Footer'
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
+import Product from './components/Product'
   
 const App = () => {
 
@@ -28,6 +29,10 @@ const App = () => {
       {
         path:"/cart",
         element: <Cart />
+      },
+      {
+        path:"/product/:id",
+        element: <Product />
       }
     ]
     }])

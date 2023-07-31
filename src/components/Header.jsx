@@ -1,13 +1,16 @@
 import React from 'react'
 import { cart, logo } from '../assets'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
         <div className="w-full h-20 bg-white border-b-[1px] border-b-gray-800 sticky top-0">
             <div className="max-w-screen-xl h-full mx-auto flex items-center justify-between">
+                <Link to="/">
                 <div>
                     <img className="w-28" src={logo} alt="Logo here" />
                 </div>
+                </Link>
 
                 <div className="flex items-center gap-8">
                     <ul className="flex items-center gap-8">
