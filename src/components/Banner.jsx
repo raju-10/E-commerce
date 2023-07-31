@@ -7,7 +7,7 @@ const Banner = () => {
     <div className="w-full h-auto">
         <div>
             <div className="w-full h-1/2 flex">
-                <img src={sliderone} className="w-screen h-full object-cover" alt="" srcset="" />
+                <img src={sliderone} className="w-screen h-full object-cover" alt=""  />
             </div>
         </div>
     </div>   
