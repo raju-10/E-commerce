@@ -3,6 +3,7 @@ import ProductCart from './ProductCart'
 import axios from 'axios'
 
 const Products = () => {
+  
   const [Products, setProducts] = useState([])
   const fetchProducts = async () => {
     const ProductsData = await axios.get('https://fakestoreapiserver.reactbd.com/products')

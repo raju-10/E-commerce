@@ -17,9 +17,9 @@ const ProductCart = ( {product} ) => {
   }
 
   return (  
-    <div className="group p-1" onClick={DisplayProductDetail}>
+    <div className="group p-1">
       <div className="w-full h-96 cursor-pointer overflow-hidden">
-        <img className="w-full h-full object-cover" src={product.image} alt="product-img" />
+        <img onClick={DisplayProductDetail} className="w-full h-full object-cover" src={product.image} alt="product-img" />
       </div>
       <div className="text-center mt-2">
         <h2>{product.title}</h2>
