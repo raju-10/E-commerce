@@ -1,10 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux'
+import { decrement, increment } from '../redux/counterSlice'
 
 const Product = () => {
   const [product, setProduct] = useState({})
   const location = useLocation()
   useEffect(() => { setProduct(location.state.item) }, [location.state])
+
+  const count = useSelector((state) => state.counter.value)
+  const dispatch = useDispatch()
 
   return (
 
@@ -21,11 +26,11 @@ const Product = () => {
 
           <div>
             <div className="w-52 flex items-center justify-between text-gray-500 gap-4 p-3">
-              {/* <p className="text-sm text-black">Quantity</p> */}
+              
               <div className="flex items-center gap-4 text-sm font-bodyFont">
-                <button className="bg-black text-white p-3">-</button>
-                <span className="text-black text-clip">{1}</span>
-                <button className="bg-black text-white p-3">+</button>
+                <button className="bg-black text-white p-3" onClick={() => dispatch(decrement())}>-</button>
+                <span className="text-black text-clip">{count}</span>
+                <button className="bg-black text-white p-3" onClick={() => dispatch(increment())}>+</button>
                 <button className="bg-black w-[200px] h-10 text-white font-titleFont hover:underline">Add to cart</button> 
               </div>
 

@@ -1,8 +1,11 @@
 import React from 'react' 
 import { useNavigate } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { incrementByAmount } from '../redux/counterSlice'
 
 const ProductCart = ( {product} ) => {
   const navigate = useNavigate()
+  const dispatch = useDispatch()
   const _id = product.title
   const idStirng = (_id) => {
     return String(_id).toLocaleLowerCase().split(" ").join("")
@@ -27,7 +30,16 @@ const ProductCart = ( {product} ) => {
       <div className="text-center mt-1">
         <h2>{product.price} MAD</h2> 
       </div>
-      <button className="bg-black text-white p-3 font-titleFont hover:bg-slate-900">Add to cart</button> 
+      <button className="bg-black text-white p-3 font-titleFont hover:bg-slate-900"
+        onClick={() => 
+          dispatch(incrementByAmount({
+            _id: product.id,
+            title: product.title, 
+            image: product.image,
+            price: product.price
+          }))
+        }
+      >Add to cart</button> 
     </div>
   )
 }

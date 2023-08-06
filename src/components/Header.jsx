@@ -1,8 +1,11 @@
 import React from 'react'
 import { cart, logo } from '../assets'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 const Header = () => {
+    const productData = useSelector((state) => state.counter.productData)
+    console.log(productData);
     return (
         <div className="w-full h-20 bg-white border-b-[1px] border-b-gray-800 sticky top-0 z-50">
             <div className="max-w-screen-xl h-full mx-auto flex items-center justify-between">
@@ -24,7 +27,7 @@ const Header = () => {
                     </ul>
                     <div className="relative">
                         <img className="w-12" src={cart} alt="cart" />
-                        <span className="absolute w-12 top-2 left-1 text-sm flex items-center justify-center font-semibold">0</span>
+                        <span className="absolute w-12 top-2 left-1 text-sm flex items-center justify-center font-semibold">{productData.length}</span>
                     </div>
                 </div>
             </div>
