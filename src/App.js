@@ -7,6 +7,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
 import Product from './components/Product'
 import Men from './pages/Men'
 import Women from './pages/Women'
+import Blog from './pages/Blog'
   
 const App = () => {
 
@@ -44,6 +45,10 @@ const App = () => {
         path:"/women",
         element: <Women />
       },
+      {
+        path:"/blog",
+        element: <Blog />
+      }
     ]
     }])
   return (

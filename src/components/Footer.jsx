@@ -40,6 +40,7 @@ const Footer = () => {
             <p className="hover:cursor-pointer hover:text-purple-500" onClick={() => navigate('/')}>Home</p>
             <p className="hover:cursor-pointer hover:text-purple-500" onClick={() => navigate('/men')}>Men clothes</p>
             <p className="hover:cursor-pointer hover:text-purple-500" onClick={() => navigate('/women')}>Women</p>
+            <p className="hover:cursor-pointer hover:text-purple-500" onClick={() => navigate('/blog')}>Our Blog</p>
           </div>
         </div>
 
