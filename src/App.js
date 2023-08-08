@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
 import Product from './components/Product'
+import Men from './pages/Men'
   
 const App = () => {
 
@@ -33,7 +34,11 @@ const App = () => {
       {
         path:"/product/:id",
         element: <Product />
-      }
+      },
+      {
+        path:"/men",
+        element: <Men />
+      },
     ]
     }])
   return (

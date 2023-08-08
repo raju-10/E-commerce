@@ -20,9 +20,9 @@ const Header = () => {
                         <Link to="/">
                         <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont">Home</li>
                         </Link> 
-                        <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont ">Pages</li>
-                        <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont ">Shop</li>
-                        <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont ">Elements</li>
+                        
+                        <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont ">Men</li>
+                        <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont ">Women</li>
                         <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont ">Blog</li>
                     </ul>
                     <div className="relative">
@@ -31,7 +31,6 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }
