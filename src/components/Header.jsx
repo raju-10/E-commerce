@@ -1,11 +1,12 @@
 import React from 'react'
 import { cart, logo } from '../assets'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
 const Header = () => {
+    const navigate = useNavigate()
     const productData = useSelector((state) => state.counter.productData)
-    console.log(productData);
+    
     return (
         <div className="w-full h-20 bg-white border-b-[1px] border-b-gray-800 sticky top-0 z-50">
             <div className="max-w-screen-xl h-full mx-auto flex items-center justify-between">
@@ -18,12 +19,15 @@ const Header = () => {
                 <div className="flex items-center gap-8">
                     <ul className="flex items-center gap-8">
                         <Link to="/">
-                        <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont">Home</li>
+                            <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont">Home</li>
                         </Link> 
                         
-                        <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont ">Men</li>
+                        <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont " onClick={() => navigate('/men')}>Men</li>
+
                         <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont ">Women</li>
+
                         <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont ">Blog</li>
+
                     </ul>
                     <div className="relative">
                         <img className="w-12" src={cart} alt="cart" />

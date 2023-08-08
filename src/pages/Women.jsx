@@ -3,7 +3,7 @@ import  { useEffect, useState } from 'react'
 import axios from 'axios'
 import ProductCart from "../components/ProductCart"
 
-const Men = () => {
+const Women = () => {
 
     const [Products, setProducts] = useState([])
     const fetchProducts = async () => {
@@ -15,7 +15,7 @@ const Men = () => {
         <div className="maw-w-screen-xl mx-auto py-10 grid grid-cols-4 gap-10">
         {
           Products.map((product, index) => (
-            product.category === "men" ? 
+            product.category === "women" ? 
             <ProductCart key={index} product={product} />  
             :
             null 
@@ -26,4 +26,4 @@ const Men = () => {
     )
 }
 
-export default Men
+export default Women
