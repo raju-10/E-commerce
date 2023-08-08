@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
 import Product from './components/Product'
 import Men from './pages/Men'
+import Women from './pages/Women'
   
 const App = () => {
 
@@ -38,6 +39,10 @@ const App = () => {
       {
         path:"/men",
         element: <Men />
+      },
+      {
+        path:"/women",
+        element: <Women />
       },
     ]
     }])

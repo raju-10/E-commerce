@@ -24,7 +24,7 @@ const Header = () => {
                         
                         <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont " onClick={() => navigate('/men')}>Men</li>
 
-                        <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont ">Women</li>
+                        <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont " onClick={() => navigate('/women')}>Women</li>
 
                         <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont ">Blog</li>
 
