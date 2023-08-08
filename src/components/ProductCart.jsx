@@ -33,7 +33,7 @@ const ProductCart = ( {product} ) => {
       <button className="bg-black text-white p-3 font-titleFont hover:bg-slate-900"
         onClick={() => 
           dispatch(incrementByAmount({
-            _id: product.id,
+            _id: product._id,
             title: product.title, 
             image: product.image,
             price: product.price

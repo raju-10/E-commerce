@@ -38,7 +38,7 @@ const Footer = () => {
           <h2 className="text-2xl text-white mb-4">Quick Links</h2>
           <div className="text-base flex flex-col gap-2">
             <p className="hover:cursor-pointer hover:text-purple-500" onClick={() => navigate('/')}>Home</p>
-            <p className="hover:cursor-pointer hover:text-purple-500" onClick={() => navigate('/men')}>Men </p>
+            <p className="hover:cursor-pointer hover:text-purple-500" onClick={() => navigate('/men')}>Men clothes</p>
             <p className="hover:cursor-pointer hover:text-purple-500" onClick={() => navigate('/women')}>Women</p>
           </div>
         </div>
