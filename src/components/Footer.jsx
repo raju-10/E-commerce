@@ -13,7 +13,7 @@ const Footer = () => {
         <div>
           <img className="w-28" src={logo} alt="Logo here" />
           <p className="text-white text-sm tracking-wide">
-            @Abdessamad-Store.ma
+             ShopCart
           </p>
           <div className="flex gap-5 mt-5 text-xl">
             <BiLogoGithub className="hover:cursor-pointer" />
@@ -27,9 +27,9 @@ const Footer = () => {
         <div>
           <h2 className="text-2xl text-white mb-4">Locate us</h2>
           <div className="text-base flex flex-col gap-2">
-            <p>Morroco Marrackech</p>
-            <p>+212608628306</p>
-            <p>abdessamad@gmail.com</p>
+            <p>G Rama Krishnam Raju</p>
+            <p>+91-9618880674</p>
+            <p>ramakrishnamrajug.g@gmail.com</p>
           </div>
         </div>
 
@@ -49,7 +49,7 @@ const Footer = () => {
           <h2 className="text-2xl text-white mb-4">Subscribe</h2>
           <div className="text-base flex flex-col gap-2">
             <input type="email" placeholder="your email address" className="bg-black text-white border-white border-solid p-3" />
-            <button type="submit" className="m-5 bg-white p-2 text-black border-white">Subscribe</button> 
+            <button type="submit" className="m-5 bg-white p-2 text-black border-white">Subscribe</button>
           </div>
         </div>
       </div>

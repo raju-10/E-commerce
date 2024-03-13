@@ -6,13 +6,13 @@ import { useSelector } from 'react-redux'
 const Header = () => {
     const navigate = useNavigate()
     const productData = useSelector((state) => state.counter.productData)
-    
+
     return (
         <div className="w-full h-20 bg-white border-b-[1px] border-b-gray-800 sticky top-0 z-50">
             <div className="max-w-screen-xl h-full mx-auto flex items-center justify-between">
                 <Link to="/">
                 <div>
-                    <img className="w-28" src={logo} alt="Logo here" />
+                    <h1 left-10>  ShopCart </h1>
                 </div>
                 </Link>
 
@@ -20,8 +20,8 @@ const Header = () => {
                     <ul className="flex items-center gap-8">
                         <Link to="/">
                             <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont">Home</li>
-                        </Link> 
-                        
+                        </Link>
+
                         <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont " onClick={() => navigate('/men')}>Men</li>
 
                         <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 cursor-pointer duration-300 font-titleFont " onClick={() => navigate('/women')}>Women</li>

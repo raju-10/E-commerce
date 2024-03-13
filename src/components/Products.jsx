@@ -3,7 +3,7 @@ import ProductCart from './ProductCart'
 import axios from 'axios'
 
 const Products = () => {
-  
+
   const [Products, setProducts] = useState([])
   const fetchProducts = async () => {
     const ProductsData = await axios.get('https://fakestoreapiserver.reactbd.com/products')
@@ -16,8 +16,8 @@ const Products = () => {
         <h2 className="text-2xl text-white py-2 bg-black w-80 text-center">Shopping Deal! </h2>
         <span className="w-20 h-1 bg-black"></span>
         <p className="max-w-[700px] text-gray-600 text-center contents">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fuga quisquam odit, qui minus fugiat id beatae accusantium vel animi, porro nostrum dicta vitae voluptas iure adipisci dolore voluptatum natus!
-          
+          Life's is too short to Shop the same old thing
+
         </p>
       </div>
 
